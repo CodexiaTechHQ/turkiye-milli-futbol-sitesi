@@ -1,0 +1,141 @@
+/* static/style.css */
+
+/* Genel Renkler ve Fontlar */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333; /* Genel metin rengi koyu gri */
+    background-color: #f8f9fa; /* Açık gri (Beyaz yakın) arka plan */
+}
+
+/* Kırmızı (Primary) Rengin Tanımlanması */
+.text-primary, .btn-primary, .bg-primary {
+    --bs-primary-rgb: 227, 24, 55; /* RGB: Türkiye Kırmızısı */
+    --bs-primary: #e31837; /* HEX: Türkiye Kırmızısı */
+    background-color: #e31837 !important;
+    border-color: #e31837 !important;
+}
+
+/* Navigasyon Çubuğu Stilleri */
+#mainNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: transparent; 
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+/* Navigasyon Kaydırıldığında Koyu Kırmızı Arka Plan */
+#mainNav.navbar-scrolled {
+    background-color: #8c0f20; /* Koyu Kırmızı */
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+#mainNav .nav-link {
+    color: white; 
+    font-weight: 600;
+}
+
+#mainNav .nav-link:hover {
+    color: #f8f9fa; /* Hover'da daha açık beyaz */
+}
+
+/* Kahraman Alanı (Hero Section) Stilleri */
+.masthead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    /* NOT: Arka plan resmini static/img klasörüne koyup linki değiştirin */
+    background-image: url('{{ url_for("static", filename="img/hero_bg.jpg") }}');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Arka plan karartma (Hero Section'ı Kırmızı Tonları ile Karartma) */
+.masthead::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Kırmızı tonlarında hafif transparan bir overlay */
+    background: rgba(138, 0, 0, 0.45); 
+    z-index: 1;
+}
+
+.masthead > .container {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.masthead-subheading {
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.5rem;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.masthead-heading {
+    font-size: 4rem;
+    font-weight: 800; /* Daha kalın puntolar */
+    line-height: 4rem;
+    margin-bottom: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Okunurluğu artırmak için gölge */
+}
+
+/* Bölüm Başlıkları ve Genel Ayarlar */
+.page-section {
+    padding: 8rem 0;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* 4. YouTube Video Kapsayıcısı Stilleri (Duyarlı Video için) */
+.video-container, .video-container-small {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.video-container iframe, .video-container-small iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* 5. GÜNCEL MAÇ BÖLÜMÜ (Arka planı Koyu Kırmızı yaptık) */
+#match {
+    background-color: #8c0f20 !important; /* Koyu Kırmızı Arka Plan */
+    color: white !important;
+}
+
+/* Footer (Footer'ı da kırmızı temaya uygun yaptık) */
+.footer {
+    background-color: #f8f9fa; /* Açık Zemin */
+    border-top: 1px solid #e31837; /* Kırmızı Çizgi */
+}
+
+.footer .link-dark {
+    color: #333 !important;
+}
+.footer .link-dark:hover {
+    color: #e31837 !important;
+}

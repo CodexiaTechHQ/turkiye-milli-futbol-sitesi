@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tek Yürek | Türkiye Milli Futbol Takımı</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="50">
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="https://www.tff.org/default.aspx?pageID=95"
+          >🇹🇷 Türkiye Futbol</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#hero">Başarılar Türkiye</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#history">Tarihçe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#videos">Eski Maçlar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-danger ms-lg-3" href="#match"
+                >İSPANYA MAÇI</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="hero" class="masthead">
+      <div
+        class="container h-100 d-flex flex-column justify-content-center text-center"
+      >
+        <div data-aos="fade-up" data-aos-duration="1500">
+          <div class="masthead-subheading">TEK BİLEK, TEK YÜREK!</div>
+          <div class="masthead-heading text-uppercase">
+            İSPANYA KARŞISINDA BAŞARILAR TÜRKİYE!
+          </div>
+          <a class="btn btn-primary btn-xl text-uppercase mt-4" href="#videos"
+            >Geçmişimizden Güç Al</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <section id="history" class="page-section">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">
+            Tarihimizdeki Destanlar
+          </h2>
+          <h3 class="section-subheading text-muted">Milli ruhun kökleri.</h3>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-4 mb-4" data-aos="fade-right">
+            <span class="fa-stack fa-4x"
+              ><i class="fas fa-circle fa-stack-2x text-primary"></i
+              ><i class="fas fa-trophy fa-stack-1x fa-inverse"></i
+            ></span>
+            <h4 class="my-3">2002 Dünya Kupası</h4>
+            <p class="text-muted">
+              Şenol Güneş yönetiminde ulaştığımız dünya üçüncülüğü, futbol
+              tarihimizin zirvesidir.
+            </p>
+          </div>
+
+          <div class="col-md-4 mb-4" data-aos="fade-up">
+            <span class="fa-stack fa-4x"
+              ><i class="fas fa-circle fa-stack-2x text-primary"></i
+              ><i class="fas fa-star fa-stack-1x fa-inverse"></i
+            ></span>
+            <h4 class="my-3">EURO 2008 Yarı Finali</h4>
+            <p class="text-muted">
+              Geri dönüşlerin takımı olarak adımız tarihe geçti. Çek Cumhuriyeti
+              ve Hırvatistan maçları unutulmaz.
+            </p>
+          </div>
+
+          <div class="col-md-4 mb-4" data-aos="fade-left">
+            <span class="fa-stack fa-4x"
+              ><i class="fas fa-circle fa-stack-2x text-primary"></i
+              ><i class="fas fa-futbol fa-stack-1x fa-inverse"></i
+            ></span>
+            <h4 class="my-3">Yeni Nesil</h4>
+            <p class="text-muted">
+              Geleceğe umutla bakan genç kadromuzla, yeni destanlar yazmaya
+              hazırız.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="videos" class="page-section bg-light">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">
+            Eski Maçlar ve Efsane Anlar
+          </h2>
+          <h3 class="section-subheading text-muted">
+            Geçmiş zaferler bize ilham veriyor.
+          </h3>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 mb-5">
+            <h4 class="text-center mb-4 text-dark" data-aos="zoom-in">
+              🇹🇷 BARO - BİZ KORKMAYIZ [EURO 2024]
+            </h4>
+            <div
+              class="video-container"
+              data-aos="flip-up"
+              data-aos-duration="1200"
+            >
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/NF-hmscPQ3I"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4" data-aos="fade-right">
+            <h5 class="text-center mb-3">
+              Türk Milli Takımının Yendiği Büyük Takımlar / 1. Bölüm
+            </h5>
+            <div class="video-container-small">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/Bz0y0h4AyaE"
+                frameborder="0"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4" data-aos="fade-left">
+            <h5 class="text-center mb-3">
+              Türk Milli Takımının Yendiği Büyük Takımlar / 2. BÖLÜM
+            </h5>
+            <div class="video-container-small">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/EM5Dd0Qx9C8"
+                frameborder="0"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="match" class="page-section bg-dark text-white text-center">
+      <div class="container" data-aos="zoom-in">
+        <h2 class="section-heading text-uppercase text-danger mb-4">
+          🏆 BU DEFA İSPANYA DEĞİL, BİZ KAZANACAĞIZ! 🏆
+        </h2>
+        <h3 class="section-subheading text-white-50">
+          #BizimÇocuklar | #WorldCup2025
+        </h3>
+
+        <p
+          class="lead mt-4 mb-4 text-warning fw-bold fst-italic"
+          style="font-size: 1.8rem"
+        >
+          "TÜRKİYE! TÜRKİYE! BİZİM İÇİN SALDIR ARTIK!"
+        </p>
+
+        <p class="lead mt-4" style="font-size: 1.3rem">
+          Tarihe not düşülsün: Gönlümüzdeki skor 8-0! Tüm kalbimizle bu maçı
+          kazanacağınıza inanıyoruz. Haydi Türkiye!
+        </p>
+
+        <a
+          href="https://www.tff.org/default.aspx?pageID=95"
+          class="btn btn-lg btn-light mt-3"
+          >Milli Takım Resmi Sayfasına Git</a
+        >
+      </div>
+    </section>
+
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-lg-start">
+            Telif Hakkı &copy; Türkiye Futbol 2024
+          </div>
+          <div class="col-lg-4 my-3 my-lg-0">
+            <a class="btn btn-dark btn-social mx-2" href="#!">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="btn btn-dark btn-social mx-2" href="#!">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="btn btn-dark btn-social mx-2" href="#!">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a class="link-dark text-decoration-none me-3" href="#!">
+              Gizlilik Politikası
+            </a>
+            <a class="link-dark text-decoration-none" href="#!">
+              Kullanım Şartları
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        once: true, // Animasyonun sadece bir kez çalışmasını sağlar
+      });
+
+      // Navigasyon Çubuğu Şeffaflık Ayarı (Scroll Efekti)
+      const mainNav = document.getElementById("mainNav");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY === 0) {
+          mainNav.classList.remove("navbar-scrolled");
+        } else {
+          mainNav.classList.add("navbar-scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
